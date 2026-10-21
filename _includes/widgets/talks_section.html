@@ -1,0 +1,26 @@
+<section class="publication-section">
+  <div class="publication-section-header">
+    <h2 class="publication-section-title">Selected Talks</h2>
+    <a class="publication-section-more" href="{{ '/talks/' | relative_url }}">
+      View all <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="publication-section-list">
+    {% for item in site.data.profile.talks limit:3 %}
+    <article class="research-publication">
+      <div class="research-publication-info">
+        <h5 class="research-publication-title">{{ item.title }}</h5>
+        <div class="research-publication-venue">
+          <strong>{{ item.event }}</strong> · {{ item.location }} · {{ item.date }}
+        </div>
+        {% if item.description %}
+        <p class="research-publication-abstract">
+          {{ item.description }}
+        </p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
