@@ -2,9 +2,9 @@
 title: "Brain-SAD: A Brain-Inspired Safe Autonomous Driving Control Framework with Dynamic Fear-Oriented Constraint on Dual-Policy"
 date: 2026-09-29 00:01:00 +0800
 selected: true
-pub: "arXiv preprint"
-pub_date: "2026"
-pub_pre:        "Submitted to IEEE TPAMI "
+pub: "arXiv "
+
+pub_pre:        "(Submitted to IEEE TPAMI) "
 abstract: >-
   Proposes a brain-inspired safe driving framework
   with dynamically adjusted fear-oriented constraints
