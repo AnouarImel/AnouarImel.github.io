@@ -1,5 +1,5 @@
 <section class="academic-panel">
-  <div class="academic-panel-title">// EDUCATION</div>
+  <div class="academic-panel-title">Education</div>
 
   <div class="academic-panel-body">
     <div class="academic-education-grid">
@@ -9,8 +9,6 @@
 
         <div class="academic-education-content">
           <div class="academic-education-heading">
-            <strong>{{ item.name }}</strong>
-
             {% if item.logo %}
             <img
               src="{{ item.logo | relative_url }}"
@@ -18,6 +16,8 @@
               class="academic-education-logo"
             >
             {% endif %}
+
+            <strong class="academic-education-name">{{ item.name }}</strong>
           </div>
 
           {% if item.dept %}
@@ -27,10 +27,8 @@
           {% endif %}
 
           <div class="academic-education-degree">
-            <span>{{ item.position }}</span>
-            <span class="academic-education-date">
-              {{ item.date }}
-            </span>
+            <span class="academic-education-position">{{ item.position }}</span>
+            <span class="academic-education-date">{{ item.date }}</span>
           </div>
         </div>
       </div>
@@ -40,7 +38,7 @@
 </section>
 
 <section class="academic-panel">
-  <div class="academic-panel-title">// RESEARCH OVERVIEW</div>
+  <div class="academic-panel-title">Research Overview</div>
 
   <div class="academic-panel-body academic-research-text">
     <p>
