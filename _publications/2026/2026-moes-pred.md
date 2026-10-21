@@ -9,6 +9,7 @@ abstract: >-
   learning framework with adaptive perturbations for
   more effective molecular property prediction.
 cover:          /assets/images/covers/moes-pred.png
+venue_short: "ICML"
 authors:
   - Zhiran Hou
   - Tinghuai Ma
