@@ -9,7 +9,7 @@ abstract: >-
   Introduces an energy-aware molecular representation
   learning framework with adaptive perturbations for
   more effective molecular property prediction.
-cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/covers/moes-pred.png
 authors:
   - Zhiran Hou
   - Tinghuai Ma
