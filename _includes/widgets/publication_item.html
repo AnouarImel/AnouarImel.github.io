@@ -1,21 +1,33 @@
+
 {% assign item = include.item %}
 
 <article class="research-publication">
+
   <div class="research-publication-media">
+
     {% if item.venue_short %}
-      <span class="research-venue-badge">
-        {{ item.venue_short | escape }}
-      </span>
+    <span class="research-venue-badge">
+      {{ item.venue_short | escape }}
+    </span>
     {% endif %}
 
     {% if item.cover %}
+    <a
+      class="research-publication-image-link"
+      href="{{ item.cover | relative_url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View full-size figure for {{ item.title | escape }}"
+    >
       <img
-        class="research-publication-cover"
         src="{{ item.cover | relative_url }}"
-        alt="Figure for {{ item.title | escape }}"
+        alt="Research figure for {{ item.title | escape }}"
+        class="research-publication-cover"
         loading="lazy"
       >
+    </a>
     {% else %}
+    <div class="research-publication-image-link">
       <svg
         class="bubble-visual-hash research-publication-cover"
         data-bubble-visual-hash="{{ item.id }}"
@@ -23,42 +35,48 @@
         role="img"
         aria-label="Publication illustration">
       </svg>
+    </div>
     {% endif %}
+
   </div>
 
   <div class="research-publication-info">
+
     <h5 class="research-publication-title">
       {{ item.title }}
     </h5>
 
-    <p class="small mb-1">
+    <div class="research-publication-authors">
       {% include widgets/author_list.html authors=item.authors %}
-    </p>
+    </div>
 
-    <p class="small mb-2 research-publication-venue">
-      {{ item.pub_pre }}<i>{{ item.pub }}</i>
+    <div class="research-publication-venue">
+      {{ item.pub_pre }}
+      <strong><em>{{ item.pub }}</em></strong>
       {{ item.pub_post }}
       {{ item.pub_date }}
       {{ item.pub_last }}
       <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
-    </p>
+    </div>
 
-    <p class="small text-muted mb-2">
+    {% if item.abstract %}
+    <p class="research-publication-abstract">
       {{ item.abstract }}
     </p>
+    {% endif %}
 
-    <div class="small research-publication-links">
+    {% if item.links %}
+    <div class="research-publication-links">
       {% for link in item.links %}
-        {% if link[1].url %}
-          <a href="{{ link[1].url }}" target="_blank" rel="noopener noreferrer">
-            [{{ link[0] }}]
-          </a>
-        {% else %}
-          <a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">
-            [{{ link[0] }}]
-          </a>
-        {% endif %}
+        {% assign link_url = link[1].url | default: link[1] %}
+        <a
+          href="{{ link_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >[{{ link[0] }}]</a>
       {% endfor %}
     </div>
+    {% endif %}
+
   </div>
 </article>
