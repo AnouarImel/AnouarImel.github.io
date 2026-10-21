@@ -15,50 +15,47 @@ github: AnouarImel
 linkedin: anouar-imel
 # orcid: 0000-0000-0000-0000
 
+
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a graduate researcher in Artificial Intelligence and an
-    M.Sc. student in Information and Communication Engineering at
-    the <strong>University of Electronic Science and Technology
-    of China (UESTC)</strong>. I previously studied Artificial
-    Intelligence at <strong>Nanjing University of Information
-    Science and Technology (NUIST)</strong>.
+    Hi, I'm Anouar! I am currently pursuing an M.Sc. in
+    Information and Communication Engineering at the
+    <strong>University of Electronic Science and Technology
+    of China (UESTC)</strong>, supervised by
+    <a href="https://www.sice.uestc.edu.cn/info/1451/11763.htm"
+    target="_blank">Prof. Qi Jin</a>.
+    Prior to that, I earned my B.Sc. in Artificial Intelligence
+    at <strong>Nanjing University of Information Science and
+    Technology (NUIST)</strong>, under the supervision of
+    <a href="https://faculty.nuist.edu.cn/ronghuan/en/index.htm"
+    target="_blank">Prof. Huan Rong</a>.
+    I continue to work closely with Prof. Rong at
+    <strong>AiCial (Intelligent Social Computing Lab)</strong>.
   </p>
 
   <p>
-    My research lies at the intersection of
-    <strong>Brain-Inspired Artificial Intelligence, Social
-    Computing, Trustworthy AI, and Multi-Agent Systems</strong>.
-    I am particularly interested in understanding how
-    intelligent agents learn, adapt, communicate, and collectively
-    shape behaviour in complex social environments.
+    My research focuses on <strong>Brain-Inspired AI,
+    Social Computing, and Trustworthy Multi-Agent Systems</strong>.
+    I draw on computational neuroscience, machine learning,
+    and LLM-based agents to investigate how individual
+    cognition and social interactions give rise to collective
+    behaviour. Through my work with AiCial, I also explore
+    <strong>opinion dynamics, social influence, and cognitive
+    security</strong> in complex online environments.
+    My broader goal is to develop scientifically grounded
+    AI systems that help us better understand, simulate,
+    and evaluate human-AI collective behaviour.
   </p>
 
   <p>
-    My ongoing research explores cognitively grounded artificial
-    societies, opinion dynamics, social influence, continual
-    learning, and the reliability of generative AI-based
-    simulations. I am interested in combining computational
-    neuroscience, machine learning, dynamical systems, and causal
-    inference to build AI systems whose behaviour can be
-    understood, evaluated, and trusted.
+    <strong>
+      I am always happy to explore potential collaborations.
+      Feel free to get in touch via
+      <a href="mailto:202524010105@std.uestc.edu.cn">email</a>.
+    </strong>
   </p>
 
-  <p>
-    Beyond social simulation, I have contributed to research
-    involving graph representation learning, molecular
-    property prediction, and brain-inspired safe autonomous
-    driving. My broader goal is to develop principled methods
-    for understanding and governing increasingly autonomous
-    AI systems.
-  </p>
-
-  <p>
-    I welcome research discussions and collaborations in
-    trustworthy AI, agent-based modelling, brain-inspired
-    computation, and collective intelligence.
-  </p>
 
 portrait_url: /assets/images/photos/Anouar.jpg
 
