@@ -1,7 +1,7 @@
 <div class="row sticky-top" style="top: 80px;">
   <div class="col">
     <div class="card border-0 shadow-sm bg-white profile-sidebar-card">
-      <div class="card-body px-4 pt-4 pb-3 text-center">
+      <div class="card-body px-4 pt-4 pb-4 text-center">
 
         {% if site.data.profile.portrait_url %}
         <div class="profile-photo-wrapper mb-3">
@@ -20,49 +20,56 @@
           {{ site.data.profile.primary_name }}
         </div>
 
-        <div class="profile-positions small mb-2">
+        {% if site.data.profile.positions %}
+        <div class="profile-positions mb-3">
           {% for position in site.data.profile.positions %}
-            <div>
-              {{ position.name }}
-              {% if position.logo %}
-              <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge position-inline-logo">
-              {% endif %}
-            </div>
+          <div class="profile-position-line">
+            <span>{{ position.name }}</span>
+            {% if position.logo %}
+            <img
+              src="{{ position.logo | relative_url }}"
+              alt="Logo"
+              class="profile-position-logo"
+            >
+            {% endif %}
+          </div>
           {% endfor %}
         </div>
+        {% endif %}
 
-        <div class="profile-email-box small mb-3">
-          <a class="email-text follow_href" href="mailto:{{ site.data.profile.email | encode_email }}">
+        <div class="profile-email-wrapper mb-3">
+          <a class="profile-email-link follow_href"
+             href="mailto:{{ site.data.profile.email | encode_email }}">
             {{ site.data.profile.email }}
           </a>
         </div>
 
-        <div class="profile-social-links h4 mb-0">
+        <div class="profile-social-links">
           {% if site.data.profile.gscholar %}
           {% if site.data.profile.gscholar contains 'scholar.google' %}
           {% assign gscholar_url = site.data.profile.gscholar %}
           {% else %}
           {% assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar %}
           {% endif %}
-          <a class="px-1 no-break follow_href" target="_blank" href="{{ gscholar_url }}">
+          <a class="follow_href" target="_blank" href="{{ gscholar_url }}">
             <i class="ai ai-google-scholar"></i>
           </a>
           {% endif %}
 
           {% if site.data.profile.github %}
-          <a class="px-1 no-break follow_href" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+          <a class="follow_href" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
             <i class="fab fa-github"></i>
           </a>
           {% endif %}
 
           {% if site.data.profile.linkedin %}
-          <a class="px-1 no-break follow_href" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+          <a class="follow_href" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
             <i class="fab fa-linkedin"></i>
           </a>
           {% endif %}
 
           {% if site.data.profile.orcid %}
-          <a class="px-1 no-break follow_href" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+          <a class="follow_href" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
             <i class="fab fa-orcid"></i>
           </a>
           {% endif %}
