@@ -5,7 +5,7 @@ navbar_name: "Anouar Imel"
 positions:
   - name: "Graduate Researcher in Artificial Intelligence"
   - name: "M.Sc. Student, UESTC"
-  logo: /assets/images/badges/uestc.png  # Logo is optional
+  logo: /assets/images/badges/uestc.jpg  # Logo is optional
 
 
 email: "202524010105@std.uestc.edu.cn"
@@ -66,7 +66,7 @@ portrait_caption: >-
 
 education:
 - name: University of Electronic Science and Technology of China
-  logo: /assets/images/badges/uestc.png
+  logo: /assets/images/badges/uestc.jpg
   position: M.Sc. in Information and Communication Engineering
   date: Sep. 2025 - present
 - name: Peking University
