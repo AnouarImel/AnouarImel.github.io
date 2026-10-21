@@ -9,6 +9,7 @@ abstract: >-
   spatial-temporal graph replay and the fusion of
   explicit and implicit graph dependencies.
 cover:          /assets/images/covers/dyg_pred.png
+venue_short: "TKDE"
 authors:
   - Zhongfeng Chen
   - Huan Rong
