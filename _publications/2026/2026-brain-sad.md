@@ -10,6 +10,7 @@ abstract: >-
   and dual policies for regular and high-risk
   driving scenarios.
 cover:          /assets/images/covers/Fig.2-1.png
+venue_short: "arXiv"
 authors:
   - Huan Rong
   - Chao Yin
