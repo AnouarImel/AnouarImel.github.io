@@ -406,3 +406,151 @@ div.lazy {
     padding: 18px;
   }
 }
+
+.academic-panel {
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid #e4eaf2;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(20, 36, 64, 0.05);
+}
+
+.academic-panel-title {
+  background: #183153;
+  color: #ffffff;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.academic-panel-body {
+  padding: 22px 24px;
+  color: #2f3e52;
+}
+
+.academic-education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.academic-education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.academic-education-dot {
+  width: 7px;
+  height: 7px;
+  margin-top: 10px;
+  flex: 0 0 7px;
+  border-radius: 2px;
+  background: #4f79a7;
+}
+
+.academic-education-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.academic-education-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.academic-education-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex: 0 0 24px;
+  margin-top: 2px;
+}
+
+.academic-education-name {
+  display: block;
+  color: #1f2f46;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.academic-education-dept {
+  margin-bottom: 6px;
+  color: #6b7a8c;
+  font-size: 0.85rem;
+}
+
+.academic-education-degree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.academic-education-position {
+  color: #22344d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.academic-education-date {
+  color: #5d7290;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.academic-research-text {
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: #42556d;
+}
+
+.academic-research-text p {
+  margin-bottom: 15px;
+}
+
+.academic-research-text p:last-child {
+  margin-bottom: 0;
+}
+
+.academic-research-figure {
+  margin: 20px 0 0;
+  padding: 6px;
+  border: 1px solid #e4eaf2;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.academic-research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .academic-education-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .academic-panel-body {
+    padding: 18px;
+  }
+
+  .academic-education-degree {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .academic-education-date {
+    white-space: normal;
+  }
+}
