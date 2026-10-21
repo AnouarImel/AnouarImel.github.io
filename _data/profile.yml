@@ -61,15 +61,13 @@ short_bio: >-
   </p>
 
 portrait_url: /assets/images/photos/Anouar.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: University of Electronic Science and Technology of China
   logo: /assets/images/badges/uestc.jpg
   position: M.Sc. in Information and Communication Engineering
   date: Sep. 2025 - present
-- name: Peking University
+- name: Nanjing University of Information Science and Technology
   logo: /assets/images/badges/nuist.png
   position: B.Sc. in Artificial Intelligence
   date: Sep. 2021 - Jul. 2025
