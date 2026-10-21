@@ -1,0 +1,62 @@
+
+{% assign public_posts = site.posts
+  | where: "public_post", true
+  | sort: "date"
+  | reverse %}
+
+{% assign blog_limit = 3 %}
+{% if include.show_all %}
+  {% assign blog_limit = public_posts.size %}
+{% endif %}
+
+<section class="publication-section">
+
+  <div class="publication-section-header">
+    <h2 class="publication-section-title">Blog</h2>
+
+    {% unless include.show_all %}
+    <a href="{{ '/blog' | relative_url }}"
+       class="publication-section-more">
+      View all <i class="fas fa-arrow-right"></i>
+    </a>
+    {% endunless %}
+  </div>
+
+  <div class="compact-section-body">
+
+    {% if public_posts.size > 0 %}
+      {% for post in public_posts limit:blog_limit %}
+
+      <div class="compact-entry">
+
+        <div class="compact-entry-label">
+          {{ post.date | date: "%b %Y" }}
+        </div>
+
+        <div class="compact-entry-content">
+
+          <div class="compact-entry-title">
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </div>
+
+          <p class="compact-entry-description">
+            {{ post.description
+               | default: post.excerpt
+               | strip_html
+               | truncate: 155 }}
+          </p>
+
+        </div>
+      </div>
+
+      {% endfor %}
+    {% else %}
+      <p class="compact-empty">
+        Research notes and articles coming soon.
+      </p>
+    {% endif %}
+
+  </div>
+</section>
