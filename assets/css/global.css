@@ -762,3 +762,78 @@ a.research-publication-image-link:hover .research-publication-cover {
   }
 }
 
+
+.academic-education-dot {
+  display: none;
+}
+
+.academic-education-item {
+  display: block;
+  min-width: 0;
+}
+
+.academic-education-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.academic-education-heading {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 10px;
+  margin-bottom: 7px;
+}
+
+.academic-education-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.academic-education-name {
+  display: block;
+  min-width: 0;
+  color: #183153;
+  font-size: 0.91rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.academic-education-degree {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 0;
+  margin-left: 38px;
+}
+
+.academic-education-position {
+  display: block;
+  color: #344054;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.academic-education-date {
+  display: block;
+  color: #728197;
+  font-size: 0.79rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .academic-education-degree {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .academic-education-date {
+    white-space: nowrap;
+  }
+}
+
