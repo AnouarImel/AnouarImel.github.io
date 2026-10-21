@@ -1,26 +1,65 @@
+
+{% assign talk_limit = 3 %}
+{% if include.show_all %}
+  {% assign talk_limit = site.data.profile.talks.size %}
+{% endif %}
+
 <section class="publication-section">
+
   <div class="publication-section-header">
-    <h2 class="publication-section-title">Selected Talks</h2>
-    <a class="publication-section-more" href="{{ '/talks/' | relative_url }}">
+    <h2 class="publication-section-title">Talks</h2>
+
+    {% unless include.show_all %}
+    <a href="{{ '/talks/' | relative_url }}"
+       class="publication-section-more">
       View all <i class="fas fa-arrow-right"></i>
     </a>
+    {% endunless %}
   </div>
 
-  <div class="publication-section-list">
-    {% for item in site.data.profile.talks limit:3 %}
-    <article class="research-publication">
-      <div class="research-publication-info">
-        <h5 class="research-publication-title">{{ item.title }}</h5>
-        <div class="research-publication-venue">
-          <strong>{{ item.event }}</strong> · {{ item.location }} · {{ item.date }}
+  <div class="compact-section-body">
+
+    {% if site.data.profile.talks and site.data.profile.talks.size > 0 %}
+      {% for item in site.data.profile.talks limit:talk_limit %}
+
+      <div class="compact-entry">
+        <div class="compact-entry-label">
+          {{ item.type | default: "TALK" | escape }}
         </div>
-        {% if item.description %}
-        <p class="research-publication-abstract">
-          {{ item.description }}
-        </p>
-        {% endif %}
+
+        <div class="compact-entry-content">
+          <div class="compact-entry-title">
+            {% if item.url %}
+              <a href="{{ item.url }}"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                {{ item.title }}
+              </a>
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </div>
+
+          <div class="compact-entry-meta">
+            {% if item.event %}{{ item.event }}{% endif %}
+            {% if item.location %} · {{ item.location }}{% endif %}
+            {% if item.date %} · {{ item.date }}{% endif %}
+          </div>
+
+          {% if item.description %}
+          <p class="compact-entry-description">
+            {{ item.description }}
+          </p>
+          {% endif %}
+        </div>
       </div>
-    </article>
-    {% endfor %}
+
+      {% endfor %}
+    {% else %}
+      <p class="compact-empty">
+        Talks and presentation materials will be added here.
+      </p>
+    {% endif %}
+
   </div>
 </section>
