@@ -150,3 +150,47 @@ div.lazy {
         transition: none;
     }
 }
+
+
+.publication-thumbnail {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+
+.publication-thumbnail img,
+.publication-thumbnail svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publication-venue-label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid #75c49c;
+  border-radius: 3px;
+  background: #17382a;
+  color: #ffffff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .publication-thumbnail {
+    max-width: 220px;
+  }
+
+  .publication-entry .col-md-9 {
+    padding-top: 0 !important;
+  }
+}
+
