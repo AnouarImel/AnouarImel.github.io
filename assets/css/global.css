@@ -1106,3 +1106,61 @@ a.research-publication-image-link:hover .research-publication-cover {
   color: #2f5b87;
   text-decoration: none;
 }
+
+
+:root {
+  --academic-navy: #183153;
+  --academic-border: #e3e9f1;
+  --academic-text: #26364b;
+  --academic-muted: #718096;
+}
+
+.academic-panel,
+.publication-section {
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid var(--academic-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(20, 36, 64, 0.05);
+}
+
+.academic-panel-title,
+.publication-section-header {
+  background: var(--academic-navy) !important;
+  background-image: none !important;
+  border: none !important;
+  padding: 13px 16px;
+}
+
+.academic-panel-title,
+.publication-section-title {
+  color: #ffffff !important;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.publication-section-title {
+  margin: 0;
+}
+
+.publication-section-title::before {
+  content: none !important;
+  display: none !important;
+}
+
+.publication-section-more {
+  color: #cfe3fa !important;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.publication-section-more:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
