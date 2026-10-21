@@ -9,7 +9,7 @@ abstract: >-
   with dynamically adjusted fear-oriented constraints
   and dual policies for regular and high-risk
   driving scenarios.
-cover:          /assets/images/covers/Fig.2.pdf
+cover:          /assets/images/covers/Fig.2-1.png
 authors:
   - Huan Rong
   - Chao Yin
