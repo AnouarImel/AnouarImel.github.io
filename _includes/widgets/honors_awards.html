@@ -1,0 +1,23 @@
+<section class="publication-section">
+  <div class="publication-section-header">
+    <h2 class="publication-section-title">Honors & Awards</h2>
+  </div>
+
+  <div class="publication-section-list">
+    {% for item in site.data.profile.honors %}
+    <article class="research-publication">
+      <div class="research-publication-info">
+        <h5 class="research-publication-title">{{ item.title }}</h5>
+        <div class="research-publication-venue">
+          <strong>{{ item.org }}</strong> · {{ item.date }}
+        </div>
+        {% if item.description %}
+        <p class="research-publication-abstract">
+          {{ item.description }}
+        </p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
