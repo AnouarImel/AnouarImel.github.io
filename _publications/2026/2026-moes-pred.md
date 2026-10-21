@@ -1,4 +1,3 @@
-  
 ---
 title:          "MOES-Pred: Molecular Structural Representation Learning by Adaptive Energy-Sentinel Vibration for Generalized Property Prediction"
 date:           2026-05-01 00:01:00 +0800
