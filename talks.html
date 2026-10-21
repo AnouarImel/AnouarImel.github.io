@@ -5,26 +5,6 @@ navbar_title: Talks
 permalink: /talks/
 ---
 
-<section class="publication-section mt-3">
-  <div class="publication-section-header">
-    <h2 class="publication-section-title">Talks</h2>
-  </div>
-
-  <div class="publication-section-list">
-    {% for item in site.data.profile.talks %}
-    <article class="research-publication">
-      <div class="research-publication-info">
-        <h5 class="research-publication-title">{{ item.title }}</h5>
-        <div class="research-publication-venue">
-          <strong>{{ item.event }}</strong> · {{ item.location }} · {{ item.date }}
-        </div>
-        {% if item.description %}
-        <p class="research-publication-abstract">
-          {{ item.description }}
-        </p>
-        {% endif %}
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+<div class="my-4">
+  {% include widgets/talks_section.html show_all=true %}
+</div>
