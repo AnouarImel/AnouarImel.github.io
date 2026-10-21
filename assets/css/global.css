@@ -1288,3 +1288,116 @@ a.research-publication-image-link:hover .research-publication-cover {
     font-size: 0.7rem;
   }
 }
+
+.profile-sidebar-card {
+  border-radius: 16px !important;
+  border: 1px solid #e4eaf2;
+  box-shadow: 0 4px 16px rgba(20, 36, 64, 0.06);
+}
+
+.profile-photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo-box {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 4px solid #355e87;
+  box-shadow: 0 6px 16px rgba(25, 45, 75, 0.14);
+  background: #fff;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #243b5a;
+  text-align: center;
+}
+
+.profile-positions {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-position-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #49627e;
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.profile-position-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.profile-email-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-email-link {
+  display: inline-block;
+  text-align: center;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: #edf4fb;
+  border: 1px solid #d2dfeb;
+  color: #1f67c7 !important;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.profile-email-link:hover {
+  color: #124f9c !important;
+  text-decoration: none;
+  background: #e7f0f9;
+}
+
+.profile-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.8rem;
+}
+
+.profile-social-links a {
+  color: #355e87 !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.profile-social-links a:hover {
+  color: #173b60 !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+  .profile-name {
+    font-size: 1.75rem;
+  }
+
+  .profile-position-line {
+    font-size: 0.95rem;
+  }
+
+  .profile-email-link {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
