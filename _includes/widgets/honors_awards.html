@@ -1,23 +1,32 @@
-<section class="publication-section">
+
+{% if site.data.profile.honors and site.data.profile.honors.size > 0 %}
+<section class="publication-section honors-section">
+
   <div class="publication-section-header">
-    <h2 class="publication-section-title">Honors & Awards</h2>
+    <h2 class="publication-section-title">
+      Honors &amp; Awards
+    </h2>
   </div>
 
-  <div class="publication-section-list">
-    {% for item in site.data.profile.honors %}
-    <article class="research-publication">
-      <div class="research-publication-info">
-        <h5 class="research-publication-title">{{ item.title }}</h5>
-        <div class="research-publication-venue">
-          <strong>{{ item.org }}</strong> · {{ item.date }}
-        </div>
-        {% if item.description %}
-        <p class="research-publication-abstract">
-          {{ item.description }}
-        </p>
+  <div class="honors-content">
+    <ul class="honors-list">
+      {% for item in site.data.profile.honors %}
+      <li>
+        {% if item.date %}
+        <span class="honors-date">{{ item.date }}</span>
         {% endif %}
-      </div>
-    </article>
-    {% endfor %}
+
+        <span class="honors-name">{{ item.title }}</span>
+
+        {% if item.org %}
+        <span class="honors-organization">
+          · {{ item.org }}
+        </span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </div>
+
 </section>
+{% endif %}
