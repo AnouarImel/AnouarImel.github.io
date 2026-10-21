@@ -1,0 +1,83 @@
+<section class="academic-panel">
+  <div class="academic-panel-title">// EDUCATION</div>
+
+  <div class="academic-panel-body">
+    <div class="academic-education-grid">
+      {% for item in site.data.profile.education %}
+      <div class="academic-education-item">
+        <span class="academic-education-dot"></span>
+
+        <div class="academic-education-content">
+          <div class="academic-education-heading">
+            <strong>{{ item.name }}</strong>
+
+            {% if item.logo %}
+            <img
+              src="{{ item.logo | relative_url }}"
+              alt="{{ item.name }} logo"
+              class="academic-education-logo"
+            >
+            {% endif %}
+          </div>
+
+          {% if item.dept %}
+          <div class="academic-education-dept">
+            {{ item.dept }}
+          </div>
+          {% endif %}
+
+          <div class="academic-education-degree">
+            <span>{{ item.position }}</span>
+            <span class="academic-education-date">
+              {{ item.date }}
+            </span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="academic-panel">
+  <div class="academic-panel-title">// RESEARCH OVERVIEW</div>
+
+  <div class="academic-panel-body academic-research-text">
+    <p>
+      My research focuses on understanding how
+      <strong>individual cognition, social interactions,
+      and evolving network structures</strong>
+      shape collective behaviour in intelligent
+      multi-agent systems.
+    </p>
+
+    <p>
+      I investigate the intersection of
+      <strong>brain-inspired computation, social
+      computing, trustworthy AI, and causal
+      inference</strong>, with particular interest
+      in learning, opinion formation, social
+      influence, and the reliability of
+      artificial societies.
+    </p>
+
+    <p>
+      My long-term research goal is to develop
+      <strong>scientifically grounded and
+      trustworthy artificial societies</strong>
+      that can help investigate human-AI
+      collective behaviour and support more
+      reliable decision-making.
+    </p>
+
+    {% if site.data.profile.research_overview_image %}
+    <figure class="academic-research-figure">
+      <img
+        src="{{ site.data.profile.research_overview_image | relative_url }}"
+        alt="Overview of my research directions"
+        loading="lazy"
+      >
+    </figure>
+    {% endif %}
+  </div>
+</section>
