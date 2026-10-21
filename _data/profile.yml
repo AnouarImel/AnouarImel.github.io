@@ -5,7 +5,7 @@ navbar_name: "Anouar Imel"
 positions:
   - name: "Graduate Researcher in Artificial Intelligence"
   - name: "M.Sc. Student, UESTC"
-  logo: /assets/images/badges/uestc.jpg  # Logo is optional
+    logo: /assets/images/badges/uestc.jpg
 
 
 email: "202524010105@std.uestc.edu.cn"
