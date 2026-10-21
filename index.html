@@ -1,98 +1,39 @@
 ---
 layout: default
-title: Home
+title : Homepage
 navbar_title: Home
 ---
 
 <div class="row">
-  <div class="col-lg-3 col-md-4">
-    {% include widgets/profile_card_mini.html %}
-  </div>
-
-  <div class="col-lg-9 col-md-8">
-    {% include widgets/profile_card_bio_only.html %}
-
-    <div class="card border-0 shadow-sm bg-white mt-3">
-      <div class="card-body p-4">
-        <h5 class="mb-3">Research Interests</h5>
-        <div class="mb-2">
-          <span class="badge badge-light border p-2 m-1">Brain-Inspired AI</span>
-          <span class="badge badge-light border p-2 m-1">Trustworthy AI</span>
-          <span class="badge badge-light border p-2 m-1">Social Computing</span>
-          <span class="badge badge-light border p-2 m-1">Multi-Agent Systems</span>
-          <span class="badge badge-light border p-2 m-1">Continual Learning</span>
-          <span class="badge badge-light border p-2 m-1">Social Simulation</span>
-          <span class="badge badge-light border p-2 m-1">Causal Inference</span>
-          <span class="badge badge-light border p-2 m-1">AI Safety & Governance</span>
-        </div>
-      </div>
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
     </div>
+    <div class="col-lg-9 col-md-8">
 
-    <div class="card border-0 shadow-sm bg-white mt-3">
-      <div class="card-body p-4">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <h5 class="mb-0">Featured Research</h5>
-          <a href="{{ '/research/' | relative_url }}" class="small">View all research &rarr;</a>
-        </div>
+        {% include widgets/profile_card_bio_only.html %}
 
-        <div class="mb-4">
-          <h6 class="font-weight-bold">BrainCogSphere</h6>
-          <p class="mb-1">
-            A brain-inspired multi-agent research framework for
-            investigating social cognition, opinion dynamics,
-            collective behaviour, and cascade transitions in
-            artificial societies.
-          </p>
-          <span class="text-muted small">Ongoing research</span>
-        </div>
+        <!-- Debugging widgets -->
+        {% include widgets/debug_repo_name.html %}
+        {% include widgets/debug_url.html %}
 
-        <hr>
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
 
-        <div class="mb-4">
-          <h6 class="font-weight-bold">Epistemic Invariance Lab</h6>
-          <p class="mb-1">
-            An experimental research tool for exploring the
-            consistency of AI judgments under controlled
-            changes to evidence and context.
-          </p>
-          <a class="small"
-             href="https://huggingface.co/spaces/ImAnouar1/Epistemic_Invariance_Lab"
-             target="_blank" rel="noopener noreferrer">
-            Hugging Face Space &rarr;
-          </a>
-        </div>
-
-        <hr>
-
-        <div>
-          <h6 class="font-weight-bold">LLM Group Memory & Evidence Retention</h6>
-          <p class="mb-1">
-            Research on how limited memory affects evidence
-            preservation and collective decision-making
-            in groups of language-model agents.
-          </p>
-          <span class="text-muted small">Collaborative research</span>
-        </div>
-      </div>
-    </div>
-
-    {% if site.data.display.homepage.show_experience %}
-      {% include widgets/experience_card.html %}
-    {% endif %}
-
-    {% if site.data.display.homepage.show_news %}
-      {% assign count_news = site.news | size %}
-      {% if count_news > 0 %}
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-      {% endif %}
-    {% endif %}
+        {% endif %}
+        {% endif %}
 
-    {% if site.data.display.homepage.show_selected_publications %}
-      {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-      {% include widgets/publication_card.html
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
         publications=pubs
         title='<i class="fas fa-star"></i> Selected Publications'
-      %}
-    {% endif %}
-  </div>
+        %}
+        {% endif %}
+    </div>
 </div>
