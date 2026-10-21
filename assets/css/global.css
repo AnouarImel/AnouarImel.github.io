@@ -1164,3 +1164,39 @@ a.research-publication-image-link:hover .research-publication-cover {
   text-decoration: underline;
 }
 
+
+.honors-content {
+  padding: 17px 24px 18px;
+}
+
+.honors-list {
+  margin: 0;
+  padding-left: 19px;
+  list-style: disc;
+}
+
+.honors-list li {
+  padding: 5px 0;
+  color: #344054;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.honors-list li::marker {
+  color: #526f92;
+}
+
+.honors-date {
+  color: #405c7e;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.honors-name {
+  font-weight: 500;
+}
+
+.honors-organization {
+  color: #69788b;
+}
+
