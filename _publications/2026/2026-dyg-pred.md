@@ -1,4 +1,3 @@
-
 ---
 title: "DyG-Pred: Spatial-Temporal Dynamic Graph Replay for Event Prediction With Gated Explicit-Implicit Graph Dependency Fusion"
 date: 2026-07-20 00:00:00 +0800
