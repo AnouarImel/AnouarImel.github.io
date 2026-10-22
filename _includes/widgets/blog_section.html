@@ -1,12 +1,9 @@
-
-{% assign public_posts = site.posts
-  | where: "public_post", true
-  | sort: "date"
-  | reverse %}
+{% assign local_posts = site.posts | where: "public_post", true %}
+{% assign all_posts = site.data.blog_entries | concat: local_posts | sort: "date" | reverse %}
 
 {% assign blog_limit = 3 %}
 {% if include.show_all %}
-  {% assign blog_limit = public_posts.size %}
+  {% assign blog_limit = all_posts.size %}
 {% endif %}
 
 <section class="publication-section">
@@ -15,7 +12,7 @@
     <h2 class="publication-section-title">Blog</h2>
 
     {% unless include.show_all %}
-    <a href="{{ '/blog' | relative_url }}"
+    <a href="{{ '/blog/' | relative_url }}"
        class="publication-section-more">
       View all <i class="fas fa-arrow-right"></i>
     </a>
@@ -24,39 +21,47 @@
 
   <div class="compact-section-body">
 
-    {% if public_posts.size > 0 %}
-      {% for post in public_posts limit:blog_limit %}
+    {% for post in all_posts limit:blog_limit %}
+    <div class="compact-entry">
 
-      <div class="compact-entry">
-
-        <div class="compact-entry-label">
-          {{ post.date | date: "%b %Y" }}
-        </div>
-
-        <div class="compact-entry-content">
-
-          <div class="compact-entry-title">
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-          </div>
-
-          <p class="compact-entry-description">
-            {{ post.description
-               | default: post.excerpt
-               | strip_html
-               | truncate: 155 }}
-          </p>
-
-        </div>
+      <div class="compact-entry-label">
+        {{ post.date | date: "%b %Y" }}
       </div>
 
-      {% endfor %}
+      <div class="compact-entry-content">
+
+        <div class="compact-entry-title">
+          {% if post.external %}
+          <a href="{{ post.url }}"
+             target="_blank"
+             rel="noopener noreferrer">
+            {{ post.title }}
+            <i class="fas fa-arrow-up-right-from-square"
+               aria-hidden="true"></i>
+          </a>
+          {% else %}
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+          {% endif %}
+        </div>
+
+        {% if post.description or post.excerpt %}
+        <p class="compact-entry-description">
+          {{ post.description
+             | default: post.excerpt
+             | strip_html
+             | truncate: 180 }}
+        </p>
+        {% endif %}
+
+      </div>
+    </div>
     {% else %}
-      <p class="compact-empty">
-        Research notes and articles coming soon.
-      </p>
-    {% endif %}
+    <p class="compact-empty">
+      Research articles coming soon.
+    </p>
+    {% endfor %}
 
   </div>
 </section>
