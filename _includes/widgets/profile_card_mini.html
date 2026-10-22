@@ -67,7 +67,16 @@
             <i class="fab fa-linkedin"></i>
           </a>
           {% endif %}
-
+          
+          {% if site.data.profile.huggingface %}
+          <a class="follow_href profile-social-hf"
+             target="_blank"
+             href="https://huggingface.co/{{ site.data.profile.huggingface }}"
+             aria-label="Hugging Face">
+            <span class="hf-badge">HF</span>
+          </a>
+          {% endif %}
+          
           {% if site.data.profile.orcid %}
           <a class="follow_href" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
             <i class="fab fa-orcid"></i>
