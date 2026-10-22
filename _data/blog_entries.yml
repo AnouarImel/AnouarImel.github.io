@@ -1,0 +1,19 @@
+- title: "When AI Agents Become Each Other's Evidence"
+  date: "2026-10-03"
+  external: true
+  url: "https://huggingface.co/blog/ImAnouar1/when-ai-agents-become-each-others-evidence"
+  description: >-
+    Why multi-agent reasoning must distinguish
+    independent information from socially propagated
+    agreement, and measure evidence dependence
+    rather than simply counting agents.
+
+- title: "From Agent-Based Models to LLM Agents: How Artificial Societies Are Changing"
+  date: "2026-09-24"
+  external: true
+  url: "https://huggingface.co/blog/ImAnouar1/from-abms-to-llm-societies"
+  description: >-
+    Examining how language-model agents transform
+    social simulation, and why more realistic agent
+    behaviour does not automatically establish
+    reliable collective or causal dynamics.
