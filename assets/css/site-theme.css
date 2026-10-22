@@ -572,3 +572,13 @@ html[data-theme="dark"] .research-publication-venue strong em {
   color: #d9eaff !important;
 }
 
+.honors-at {
+  color: #4276a8;
+  font-weight: 700;
+  margin: 0 3px;
+}
+
+html[data-theme="dark"] .honors-at {
+  color: #8dc8ff;
+}
+
