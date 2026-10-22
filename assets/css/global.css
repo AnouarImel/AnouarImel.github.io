@@ -1481,3 +1481,31 @@ a.research-publication-image-link:hover .research-publication-cover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.profile-email-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-email-link {
+  display: inline-block;
+  max-width: 100%;
+  padding: 7px 11px;
+  border-radius: 8px;
+  background: #edf4fb;
+  border: 1px solid #d2dfeb;
+  color: #1f67c7 !important;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.80rem;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-email-link:hover {
+  color: #124f9c !important;
+  text-decoration: none;
+  background: #e7f0f9;
+}
