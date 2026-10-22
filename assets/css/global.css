@@ -1467,3 +1467,17 @@ a.research-publication-image-link:hover .research-publication-cover {
   background: #ffffff;
   box-shadow: 0 3px 13px rgba(22, 49, 79, 0.05);
 }
+
+
+.research-publication-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.research-publication-title-link:hover,
+.research-publication-title-link:focus-visible {
+  color: #376c9e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
