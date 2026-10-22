@@ -649,3 +649,37 @@ html[data-theme="dark"] .honors-at {
   line-height: inherit;
   letter-spacing: inherit;
 }
+
+
+.profile-sidebar-card .profile-positions {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 12px !important;
+}
+
+.profile-sidebar-card .profile-position-line {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+  gap: 5px;
+  text-align: center;
+  font-size: 0.81rem;
+  line-height: 1.4;
+}
+
+.profile-sidebar-card .profile-position-line span {
+  white-space: nowrap;
+}
+
+.profile-sidebar-card .profile-position-logo {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
