@@ -1,6 +1,12 @@
 
 {% assign item = include.item %}
 
+
+{% assign paper_link = item.links.Paper | default: item.links.arXiv | default: item.links.PDF %}
+{% if paper_link.url %}
+  {% assign paper_link = paper_link.url %}
+{% endif %}
+
 <article class="research-publication">
 
   <div class="research-publication-media">
@@ -43,9 +49,21 @@
   <div class="research-publication-info">
 
     <h5 class="research-publication-title">
-      {{ item.title }}
+      {% if paper_link %}
+        <a
+          href="{{ paper_link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="research-publication-title-link"
+        >
+          {{ item.title }}
+        </a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
     </h5>
 
+    
     <div class="research-publication-authors">
       {% include widgets/author_list.html authors=item.authors %}
     </div>
