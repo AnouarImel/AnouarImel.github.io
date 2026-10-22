@@ -117,4 +117,16 @@ honors:
     date: "2023 and 2024"
 
 
+talks:
+  - title: "When AI Agents Become Each Other's Evidence"
+    type: "TALK"
+    event: "AI Research Moroccan Network (AIRMN)"
+    description: >-
+      Research talk on information dependence,
+      evidence recycling, social influence, and the
+      distinction between independent agreement
+      and socially propagated consensus in
+      multi-agent AI systems.
+ 
+
 
