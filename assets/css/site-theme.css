@@ -433,3 +433,119 @@ html[data-theme="dark"] .honors-date {
     flex-direction: column;
   }
 }
+
+
+.academic-education-name {
+  color: var(--site-text);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.academic-education-position {
+  color: var(--site-text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.academic-education-date {
+  color: var(--site-muted);
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+
+.academic-education-metrics {
+  gap: 5px 15px;
+  margin-top: 9px;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: var(--site-text);
+}
+
+.education-metric-label {
+  font-weight: 700;
+  color: var(--site-text);
+}
+
+.education-metric-value {
+  font-weight: 700;
+  color: #285f96;
+}
+
+.honors-content {
+  padding: 18px 24px 20px;
+}
+
+.honors-list {
+  padding-left: 19px;
+}
+
+.honors-item {
+  padding: 6px 0 !important;
+  font-size: 0.89rem !important;
+  line-height: 1.7 !important;
+  color: var(--site-text) !important;
+}
+
+.honors-date {
+  color: #285f96;
+  font-weight: 700;
+  margin-right: 7px;
+}
+
+.honors-name {
+  color: var(--site-text);
+  font-weight: 600;
+}
+
+.honors-organization {
+  color: var(--site-text);
+  font-weight: 400;
+}
+
+.honors-organization strong {
+  color: var(--site-text);
+  font-weight: 700;
+}
+
+.honors-list li::marker {
+  color: #416d9b;
+}
+
+.compact-entry-title {
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.compact-entry-description {
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.compact-entry-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .education-metric-value,
+html[data-theme="dark"] .honors-date {
+  color: #a7d2ff;
+}
+
+html[data-theme="dark"] .honors-name,
+html[data-theme="dark"] .honors-organization,
+html[data-theme="dark"] .honors-organization strong {
+  color: var(--site-text);
+}
+
+@media (max-width: 767px) {
+  .academic-education-metrics {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .honors-content {
+    padding: 16px 18px;
+  }
+}
