@@ -25,11 +25,28 @@
             {{ item.dept }}
           </div>
           {% endif %}
-
+          
           <div class="academic-education-degree">
             <span class="academic-education-position">{{ item.position }}</span>
             <span class="academic-education-date">{{ item.date }}</span>
           </div>
+          
+          {% if item.gpa or item.rank %}
+          <div class="academic-education-metrics">
+            {% if item.gpa %}
+            <span>
+              <strong>GPA:</strong> {{ item.gpa }}
+            </span>
+            {% endif %}
+          
+            {% if item.rank %}
+            <span>
+              <strong>Class Rank:</strong> {{ item.rank }}
+            </span>
+            {% endif %}
+          </div>
+          {% endif %}
+
         </div>
       </div>
       {% endfor %}
