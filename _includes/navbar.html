@@ -1,18 +1,51 @@
-<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                {% for item in site.data.navigation.pages %}
-                <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top academic-navbar">
+  <div class="container-lg">
+
+    <a class="navbar-brand academic-terminal"
+       href="{{ '/' | relative_url }}"
+       aria-label="Anouar Imel homepage">
+      <span class="terminal-name">Anouar</span><span class="terminal-at">@</span><span class="terminal-org">UESTC</span><span class="terminal-prompt">:~$</span>
+      <span class="terminal-greeting">hello!</span>
+    </a>
+
+    <div class="d-flex align-items-center ml-auto order-lg-3">
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false">
+        <i id="theme-toggle-icon" class="fas fa-moon" aria-hidden="true"></i>
+        <span id="theme-toggle-label">Dark</span>
+      </button>
+
+      <button
+        class="navbar-toggler ml-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
+
+    <div class="collapse navbar-collapse order-lg-2"
+         id="navbarResponsive">
+      <ul class="navbar-nav ml-lg-auto">
+        {% for item in site.data.navigation.pages %}
+        <li class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
+          <a class="nav-link"
+             href="{{ item.url | relative_url }}"
+             {% if item.name == page.navbar_title %}aria-current="page"{% endif %}>
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
 </nav>
