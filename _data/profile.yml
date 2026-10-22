@@ -89,13 +89,12 @@ honors:
     org: "UESTC"
     date: "2025–2027"
 
+  - title: "International Organization of Youth (IOY) Ambassador"
+    date: "2026–2027"
+
   - title: "Top International Graduate — Class of 2025"
     org: "NUIST"
     date: "2025"
-
-  - title: "Bronze Medal, AI Innovation Cup"
-    org: "Fudan University and Lingang Group"
-    date: "2023"
 
   - title: "Longshan Scholarship"
     org: "NUIST"
@@ -103,18 +102,19 @@ honors:
 
   - title: "Jiangsu Government Excellent Students Scholarship"
     org: "Jiangsu Provincial Government"
-    date: "2023 and 2024"
+    date: "2023 & 2024
+  - title: "Bronze Medal, AI Innovation Cup"
+    org: "Fudan University and Lingang Group"
+    date: "2023""
+
+  - title: "Best International Athlete"
+    org: "NUIST"
+    date: "2023 & 2024"
 
   - title: "Scholarship Scheme for Undergraduate Students"
     org: "NUIST"
     date: "2021–2025"
 
-  - title: "IOY Ambassador"
-    date: "2026–2027"
-
-  - title: "Best International Athlete"
-    org: "NUIST"
-    date: "2023 and 2024"
 
 
 talks:
