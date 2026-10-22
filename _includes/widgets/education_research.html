@@ -31,7 +31,27 @@
             <span class="academic-education-date">{{ item.date }}</span>
           </div>
           
+          
           {% if item.gpa or item.rank %}
+          <div class="academic-education-metrics">
+          
+            {% if item.gpa %}
+            <span class="education-metric">
+              <strong class="education-metric-label">GPA:</strong>
+              <strong class="education-metric-value">{{ item.gpa }}</strong>
+            </span>
+            {% endif %}
+          
+            {% if item.rank %}
+            <span class="education-metric">
+              <strong class="education-metric-label">Class Rank:</strong>
+              <strong class="education-metric-value">{{ item.rank }}</strong>
+            </span>
+            {% endif %}
+          
+          </div>
+          {% endif %}
+
           <div class="academic-education-metrics">
             {% if item.gpa %}
             <span>
