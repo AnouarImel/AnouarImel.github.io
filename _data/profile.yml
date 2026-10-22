@@ -59,15 +59,21 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/Anouar.jpg
 
+
 education:
-- name: University of Electronic Science and Technology of China
-  logo: /assets/images/badges/uestc.jpg
-  position: M.Sc. in Information and Communication Engineering
-  date: Sep. 2025 - present
-- name: Nanjing University of Information Science and Technology
-  logo: /assets/images/badges/nuist.png
-  position: B.Sc. in Artificial Intelligence
-  date: Sep. 2021 - Jul. 2025
+  - name: University of Electronic Science and Technology of China
+    logo: /assets/images/badges/uestc.jpg
+    position: M.Sc. in Information and Communication Engineering
+    date: "Sep. 2025 - Present"
+    gpa: "3.93/4"
+
+  - name: Nanjing University of Information Science and Technology
+    logo: /assets/images/badges/nuist.png
+    position: B.Sc. in Artificial Intelligence
+    date: "Sep. 2021 - Jul. 2025"
+    gpa: "4.2/5"
+    rank: "1st in the 2021 intake cohort"
+
 
 
 
