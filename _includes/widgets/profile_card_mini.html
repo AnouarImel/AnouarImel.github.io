@@ -24,13 +24,19 @@
         <div class="profile-positions mb-3">
           {% for position in site.data.profile.positions %}
           <div class="profile-position-line">
-            <span>{{ position.name }}</span>
-            {% if position.logo %}
-            <img
-              src="{{ position.logo | relative_url }}"
-              alt="Logo"
-              class="profile-position-logo"
-            >
+            <span>{{ position.name }}</span> 
+            {% if position.name contains 'AIRMN' %}
+              <span
+                class="profile-airmn-mark"
+                role="img"
+                aria-label="AIRMN logo">
+              </span>
+            {% elsif position.logo %}
+              <img
+                src="{{ position.logo | relative_url }}"
+                alt="{{ position.name }} logo"
+                class="profile-position-logo"
+              >
             {% endif %}
           </div>
           {% endfor %}
