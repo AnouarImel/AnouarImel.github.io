@@ -23,9 +23,13 @@
       {% for item in site.data.profile.talks limit:talk_limit %}
 
       <div class="compact-entry">
-        <div class="compact-entry-label">
-          {{ item.type | default: "TALK" | escape }}
+        <div class="compact-entry-label talk-entry-label">
+          <span>{{ item.type | default: "TALK" | escape }}</span>
+          {% if item.date %}
+            <span class="talk-entry-date">{{ item.date }}</span>
+          {% endif %}
         </div>
+
 
         <div class="compact-entry-content">
           <div class="compact-entry-title">
@@ -43,7 +47,6 @@
           <div class="compact-entry-meta">
             {% if item.event %}{{ item.event }}{% endif %}
             {% if item.location %} · {{ item.location }}{% endif %}
-            {% if item.date %} · {{ item.date }}{% endif %}
           </div>
 
           {% if item.description %}
