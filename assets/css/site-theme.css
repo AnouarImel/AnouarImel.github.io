@@ -683,3 +683,10 @@ html[data-theme="dark"] .honors-at {
   flex-shrink: 0;
 }
 
+.profile-sidebar-card .profile-position-logo {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
