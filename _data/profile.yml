@@ -7,6 +7,7 @@ positions:
     logo: /assets/images/badges/uestc.jpg
     
   - name: "Founder, AIRMN"
+    logo: /assets/images/badges/airmn.jpg
 
 email: "202524010105@std.uestc.edu.cn"
 # cv_link: link-to-your-cv-file
@@ -51,7 +52,7 @@ short_bio: >-
     I draw on computational neuroscience, machine learning,
     and LLM-based agents to investigate how individual
     cognition and social interactions give rise to collective
-    behaviour. Through my work with AiCial, I also explore
+    behaviour. Through my work with </strong>AiCial</strong>, I also explore
     <strong>opinion dynamics, social influence, and cognitive
     security</strong> in complex online environments.
     My broader goal is to develop scientifically grounded
