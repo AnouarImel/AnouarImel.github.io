@@ -83,10 +83,38 @@ education:
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
 
+
 honors:
-  - title: "Bronze Award, AI Innovation Cup"
-    org: "National/Academic Competition"
+  - title: "Chinese Government Scholarship (CSC)"
+    org: "UESTC"
+    date: "2025–2027"
+
+  - title: "Top International Graduate — Class of 2025"
+    org: "NUIST"
+    date: "2025"
+
+  - title: "Bronze Medal, AI Innovation Cup"
+    org: "Fudan University and Lingang Group"
     date: "2023"
-    description: "Awarded for team work on hallucination detection and AI innovation."
+
+  - title: "Longshan Scholarship"
+    org: "NUIST"
+    date: "2025"
+
+  - title: "Jiangsu Government Excellent Students Scholarship"
+    org: "Jiangsu Provincial Government"
+    date: "2023, 2024"
+
+  - title: "Scholarship Scheme for Undergraduate Students"
+    org: "NUIST"
+    date: "2021–2025"
+
+  - title: "IOY Ambassador"
+    date: "2026–2027"
+
+  - title: "Best International Athlete"
+    org: "Nanjing University of Information Science and Technology"
+    date: "2023–2024"
+
 
 
