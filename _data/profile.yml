@@ -5,7 +5,8 @@ navbar_name: "Anouar Imel"
 positions:
   - name: "M.Sc. Student, UESTC"
     logo: /assets/images/badges/uestc.jpg
-
+    
+  - name: "Founder, AIRMN"
 
 email: "202524010105@std.uestc.edu.cn"
 # cv_link: link-to-your-cv-file
