@@ -626,3 +626,26 @@ html[data-theme="dark"] .honors-at {
   font-family: "Poppins", sans-serif;
 }
 
+
+.profile-positions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.profile-position-line {
+  justify-content: center;
+  text-align: center;
+}
+
+
+.text-profile-bio p > a {
+  font-family: "Poppins", sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
