@@ -690,3 +690,33 @@ html[data-theme="dark"] .honors-at {
   flex-shrink: 0;
   border-radius: 50%;
 }
+
+
+.profile-sidebar-card .profile-position-logo,
+.profile-sidebar-card .profile-airmn-mark {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  vertical-align: middle;
+}
+
+.profile-sidebar-card .profile-position-logo {
+  object-fit: contain;
+}
+
+.profile-sidebar-card .profile-airmn-mark {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url("../images/badges/AIRMN2.png");
+  background-repeat: no-repeat;
+  background-size: 43px 43px;
+  background-position: center 37%;
+}
+
+.profile-sidebar-card .profile-position-line {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
