@@ -582,3 +582,27 @@ html[data-theme="dark"] .honors-at {
   color: #8dc8ff;
 }
 
+
+.talk-entry-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.talk-entry-date {
+  color: var(--site-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.compact-entry:has(.talk-entry-label) {
+  grid-template-columns: 95px minmax(0, 1fr);
+}
+
+@media (max-width: 576px) {
+  .compact-entry:has(.talk-entry-label) {
+    grid-template-columns: 85px minmax(0, 1fr);
+  }
+}
+
