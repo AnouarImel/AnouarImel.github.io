@@ -117,17 +117,19 @@ honors:
     date: "2021–2025"
 
 
-
 talks:
   - title: "When AI Agents Become Each Other's Evidence"
     type: "TALK"
     event: "AI Research Moroccan Network (AIRMN)"
+    date: "October 2026"
     description: >-
       Research talk on information dependence,
       evidence recycling, social influence, and the
       distinction between independent agreement
       and socially propagated consensus in
       multi-agent AI systems.
+    url: "https://huggingface.co/blog/ImAnouar1/when-ai-agents-become-each-others-evidence"
+
  
 
 
