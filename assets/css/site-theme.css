@@ -315,3 +315,47 @@ html[data-theme="dark"] .text-body {
     transition: none;
   }
 }
+
+/* Navbar brand: just the name */
+.academic-terminal-name-only {
+  color: #f3f8ff !important;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.academic-terminal-name-only:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Bigger navigation buttons */
+.academic-navbar .navbar-nav .nav-link {
+  padding: 10px 18px;
+  min-width: 112px;
+  text-align: center;
+  font-size: 0.84rem;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+/* Keep the light/dark button smaller */
+.theme-toggle {
+  min-width: 78px !important;
+  padding: 7px 10px !important;
+  font-size: 0.76rem !important;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .academic-navbar .navbar-nav .nav-link {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 14px;
+  }
+
+  .academic-terminal-name-only {
+    font-size: 0.92rem;
+  }
+}
