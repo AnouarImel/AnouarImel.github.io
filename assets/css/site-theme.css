@@ -464,13 +464,13 @@ html[data-theme="dark"] .honors-date {
 }
 
 .education-metric-label {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--site-text);
 }
 
 .education-metric-value {
-  font-weight: 700;
-  color: #285f96;
+  font-weight: 500 !important;
+  color: #56779b;
 }
 
 .honors-content {
@@ -530,7 +530,7 @@ html[data-theme="dark"] .honors-date {
 
 html[data-theme="dark"] .education-metric-value,
 html[data-theme="dark"] .honors-date {
-  color: #a7d2ff;
+  color: #9fc4eb;
 }
 
 html[data-theme="dark"] .honors-name,
