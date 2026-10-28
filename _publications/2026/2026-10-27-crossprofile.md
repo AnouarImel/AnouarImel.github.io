@@ -3,6 +3,7 @@ title: "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions"
 date: 2026-10-27
 selected: true
 pub: "arXiv preprint"
+pub_pre:        "(Submitted to AAAI 2027 @ WMAC) "
 pub_date: "2026"
 cover:          /assets/images/covers/Fig2.png
 venue_short: "arXiv"
