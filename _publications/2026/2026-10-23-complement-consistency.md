@@ -6,7 +6,7 @@ pub: "arXiv preprint"
 pub_pre:        "(Submitted to AAAI 2027 @ SocialSim) "
 pub_date: "2026"
 venue_short: "arXiv"
-cover:          /assets/images/covers/Figure-1.png
+cover:        assets/images/covers/figure-1.png
 authors:
   - Anouar Imel
   - Jin Qi
