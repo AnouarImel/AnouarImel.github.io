@@ -1,0 +1,26 @@
+{% if site.data.home_news and site.data.home_news.size > 0 %}
+<section class="publication-section academic-news">
+  <div class="publication-section-header">
+    <h2 class="publication-section-title">Recent News</h2>
+  </div>
+  <div class="compact-section-body">
+    {% for item in site.data.home_news %}
+    <div class="compact-entry academic-news-entry">
+      <div class="compact-entry-label">{{ item.when | escape }}</div>
+      <div class="compact-entry-content">
+        <div class="compact-entry-title">
+          {% if item.url %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
+          {% else %}
+          {{ item.title | escape }}
+          {% endif %}
+        </div>
+        {% if item.detail %}
+        <p class="compact-entry-description">{{ item.detail | escape }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
