@@ -720,3 +720,23 @@ html[data-theme="dark"] .honors-at {
   justify-content: center;
   gap: 6px;
 }
+
+
+.academic-news-entry {
+  grid-template-columns: 94px minmax(0, 1fr);
+}
+
+.academic-news-entry .compact-entry-label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.academic-news-entry .compact-entry-description {
+  margin-top: 3px;
+}
+
+@media (max-width: 576px) {
+  .academic-news-entry {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+}
