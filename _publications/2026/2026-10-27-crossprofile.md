@@ -5,7 +5,7 @@ selected: true
 pub: "arXiv preprint"
 pub_pre:        "(Submitted to AAAI 2027 @ WMAC) "
 pub_date: "2026"
-cover:          /assets/images/covers/Fig2.png
+cover:          assets/images/covers/fig2.png
 venue_short: "arXiv"
 authors:
   - Anouar Imel
