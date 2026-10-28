@@ -3,6 +3,7 @@ title: 'Do "True" and "False" Add Up to One? Complement Consistency in LLM-Agent
 date: 2026-10-23
 selected: true
 pub: "arXiv preprint"
+pub_pre:        "(Submitted to AAAI 2027 @ SocialSim) "
 pub_date: "2026"
 venue_short: "arXiv"
 cover:          /assets/images/covers/Figure-1.png
