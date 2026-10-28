@@ -130,17 +130,17 @@ honors:
 
 
 talks:
-  - title: "When AI Agents Become Each Other's Evidence"
+  - title: "From Agent-Based Models to LLM Agents: How Artificial Societies Are Changing"
     type: "TALK"
     event: "AI Research Moroccan Network (AIRMN)"
     date: "Oct 2026"
     description: >-
-      Research talk on information dependence,
-      evidence recycling, social influence, and the
-      distinction between independent agreement
-      and socially propagated consensus in
-      multi-agent AI systems.
-    url: "https://huggingface.co/blog/ImAnouar1/when-ai-agents-become-each-others-evidence"
+      A research talk exploring the transition from
+      classical agent-based models to LLM-powered
+      artificial societies, including social influence,
+      emergent collective behaviour, and the challenges
+      of scientific validation and causal interpretation.
+    url: "https://huggingface.co/blog/ImAnouar1/from-abms-to-llm-societies"
 
  
 
