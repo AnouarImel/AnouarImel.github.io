@@ -1,27 +1,23 @@
-- when: "Oct 2026"
-  title: "New preprint on memory failures in LLM group decisions"
-  detail: 'Released "Rare, Relevant, and Still Wrong," introducing CrossProfile.'
-  url: "https://arxiv.org/abs/2610.37624"
 
-- when: "Oct 2026"
-  title: "New preprint on consistency in LLM-agent opinion simulations"
-  detail: 'Released "Do True and False Add Up to One?" on complement consistency.'
-  url: "https://arxiv.org/abs/2610.32874"
+- when: "2026-09"
+  title: "Selected as Ambassador of the International Organization of Youth (IOY)"
+
+- when: "2026-07"
+  title: "MOES-Pred accepted at ICML 2026"
+  url: "https://proceedings.mlr.press/v306/hou26f.html"
 
 - when: "2026"
   title: "DyG-Pred published in IEEE TKDE"
-  detail: "Co-authored work on dynamic graph replay for event prediction."
   url: "https://doi.org/10.1109/TKDE.2026.3715213"
 
-- when: "Jul 2026"
-  title: "MOES-Pred presented at ICML 2026"
-  detail: "Co-authored work on energy-aware molecular structural representation learning."
-  url: "https://proceedings.mlr.press/v306/hou26f.html"
-
-- when: "Sep 2026"
+- when: "2026-05"
   title: "Founded the AI Research Moroccan Network (AIRMN)"
-  detail: "Launched a community for research exchange and AI collaboration."
+
+- when: "2025-07"
+  title: "Received the Honorary Title of Outstanding Undergraduate at NUIST"
+
+- when: "2025-06"
+  title: "Awarded the NUIST Longshan Scholarship"
 
 - when: "2025"
-  title: "Awarded the Chinese Government Scholarship (CSC) at UESTC"
-  detail: "Scholarship period: 2025–2027, for M.Sc. studies."
+  title: "Awarded the Chinese Government Scholarship (CSC) at UESTC for 2025–2027"
