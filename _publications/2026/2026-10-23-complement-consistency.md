@@ -5,6 +5,7 @@ selected: true
 pub: "arXiv preprint"
 pub_date: "2026"
 venue_short: "arXiv"
+cover:          /assets/images/covers/Figure-1.png
 authors:
   - Anouar Imel
   - Jin Qi
