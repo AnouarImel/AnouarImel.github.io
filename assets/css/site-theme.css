@@ -740,3 +740,91 @@ html[data-theme="dark"] .honors-at {
     grid-template-columns: 78px minmax(0, 1fr);
   }
 }
+
+
+/* Compact scrollable academic news */
+
+.academic-news {
+  margin-top: 16px;
+  overflow: hidden;
+  background: var(--site-card);
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+}
+
+.academic-news-heading {
+  padding: 11px 16px 7px;
+  color: var(--site-header-text);
+  background: var(--site-card);
+  font-family: "Lato", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.academic-news-scroll {
+  max-height: 190px;
+  overflow-y: auto;
+  padding: 5px 16px 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #8faecb transparent;
+}
+
+.academic-news-row {
+  display: grid;
+  grid-template-columns: 67px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: baseline;
+  padding: 5px 0;
+  font-size: 0.83rem;
+  line-height: 1.55;
+}
+
+.academic-news-date {
+  color: var(--site-link);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.academic-news-text {
+  color: var(--site-text);
+  font-weight: 400;
+}
+
+.academic-news-text a {
+  color: var(--site-link);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.academic-news-text a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.academic-news-scroll:focus-visible {
+  outline: 2px solid var(--site-link);
+  outline-offset: -3px;
+}
+
+html[data-theme="dark"] .academic-news-heading {
+  color: #b9d9f7;
+}
+
+html[data-theme="dark"] .academic-news-scroll {
+  scrollbar-color: #526f91 transparent;
+}
+
+@media (max-width: 576px) {
+  .academic-news-row {
+    grid-template-columns: 61px minmax(0, 1fr);
+    column-gap: 8px;
+    font-size: 0.79rem;
+  }
+
+  .academic-news-scroll {
+    max-height: 180px;
+    padding: 5px 12px 10px;
+  }
+}
+
