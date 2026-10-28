@@ -4,6 +4,7 @@ date: 2026-10-27
 selected: true
 pub: "arXiv preprint"
 pub_date: "2026"
+cover:          /assets/images/covers/Fig2.png
 venue_short: "arXiv"
 authors:
   - Anouar Imel
