@@ -4,7 +4,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% if page.url == "/" %}
+    <title>Anouar Imel | AI Researcher at UESTC</title>
+    
+    <meta name="description" content="Anouar Imel is an AI researcher and M.Sc. student at UESTC working on collective intelligence, social computing, brain-inspired AI, and trustworthy multi-agent systems.">
+    
+    <link rel="canonical" href="https://anouarimel.github.io/">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://anouarimel.github.io/#person",
+        "name": "Anouar Imel",
+        "url": "https://anouarimel.github.io/",
+        "description": "AI researcher specializing in collective intelligence, social computing, brain-inspired AI, and trustworthy multi-agent systems.",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Electronic Science and Technology of China"
+        },
+        "sameAs": [
+          "https://scholar.google.com/citations?user=1jtCgD8AAAAJ",
+          "https://orcid.org/0009-0006-6625-4371",
+          "https://github.com/AnouarImel",
+          "https://huggingface.co/ImAnouar1"
+        ]
+      }
+    }
+    </script>
+    {% else %}
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    {% endif %}
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
