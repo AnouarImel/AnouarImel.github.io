@@ -57,7 +57,11 @@
           {% else %}
           {% assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar %}
           {% endif %}
-          <a class="follow_href" target="_blank" href="{{ gscholar_url }}">
+          <a class="follow_href"
+             href="{{ gscholar_url }}"
+             target="_blank"
+             rel="me noopener noreferrer"
+             aria-label="Google Scholar">
             <i class="ai ai-google-scholar"></i>
           </a>
           {% endif %}
